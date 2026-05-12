@@ -1,0 +1,9 @@
+body { font-family: 'Courier New', monospace; background: #1e1e1e; color: #e0e0e0; }
+.header { background: #333; color: #ffcc00; text-align: center; padding: 25px; }
+.container { display: flex; gap: 15px; padding: 20px; }
+.menu { background: #444; color: #fff; }
+.menu button { background: #666; color: #fff; }
+.menu button:hover { background: #ffcc00; color: #000; }
+.content { background: #2c2c2c; padding: 20px; border-radius: 10px; }
+.sidebar { background: #555; }
+.footer { background: #222; color: #fff; }

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Layout Replica</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+/* HEADER */
+.header {
+    width: 80%;
+    margin: 20px auto 0;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 80%;
+    margin: auto;
+    background: #333;
+    padding: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+/* 🔥 HOVER ANIMATION */
+.navbar a:hover {
+    background: #4CAF50;
+    transform: scale(1.1);
+}
+
+/* 🔥 ACTIVE TAB */
+.navbar a.active {
+    background: #4CAF50;
+    box-shadow: 0 0 10px #4CAF50;
+    transform: scale(1.1);
+}
+
+/* MAIN */
+.main {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+}
+
+/* LEFT BUTTONS */
+.sidebar {
+    width: 120px;
+}
+
+.sidebar button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background: white;
+}
+
+/* RIGHT CONTENT */
+.content {
+    flex: 1;
+    margin-left: 20px;
+}
+
+/* TOP TEXT */
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+.column {
+    width: 50%;
+}
+
+/* FOOTER */
+.footer {
+    width: 80%;
+    margin: 20px auto;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: black;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    This is Header
+</div>
+
+<div class="navbar">
+    <a href="#" class="active">Home</a>
+    <a href="#">News</a>
+    <a href="#">Contact</a>
+    <a href="#">About</a>
+</div>
+
+<div class="main">
+
+    <div class="sidebar">
+        <button>Home</button>
+        <button>News</button>
+        <button>Contact</button>
+        <button>About</button>
+    </div>
+
+    <div class="content">
+        <div class="row">
+            <div class="column">
+                <h3>Heading 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <div class="column">
+                <h3>Heading 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+
+        <br>
+
+        <div>
+            <h3>Heading 4</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Molestiae cum, eius praesentium pariatur.</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    Footer
+</div>
+
+</body>
+</html>

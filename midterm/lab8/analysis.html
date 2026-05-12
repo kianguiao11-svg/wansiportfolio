@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Homepage</title>
+
+<!-- Default Stylesheet -->
+<link id="pagestyle" rel="stylesheet" href="style1.css">
+
+<style>
+    /* Basic layout for menu buttons */
+    .menu button {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+</style>
+
+<script>
+    function switchStyle(sheet) {
+        const link = document.getElementById('pagestyle');
+        if(sheet === 'none'){
+            link.href = '';
+        } else {
+            link.href = sheet + '.css';
+        }
+    }
+</script>
+
+</head>
+<body>
+
+<div class="header">
+    <h1>Welcome to My Homepage</h1>
+    <p>Select different styles using the menu</p>
+</div>
+
+<div class="container">
+
+    <div class="menu">
+        <button onclick="switchStyle('style1')">Stylesheet 1</button>
+        <button onclick="switchStyle('style2')">Stylesheet 2</button>
+        <button onclick="switchStyle('style3')">Stylesheet 3</button>
+        <button onclick="switchStyle('style4')">Stylesheet 4</button>
+        <button onclick="switchStyle('none')">No Stylesheet</button>
+    </div>
+
+    <div class="content">
+        <h2>Same Page Different Stylesheets</h2>
+        <p>
+            This is a demonstration of how different styles can change the layout
+            of your HTML page. You can switch styles using the menu.
+        </p>
+
+        <h3>No Styles</h3>
+        <p>
+            This page uses sections to group content. Try changing styles to see
+            the difference in layout and design.
+        </p>
+    </div>
+
+    <div class="sidebar">
+        <h3>Side-Bar</h3>
+        <p>
+            This is a sidebar area. You can put additional information here
+            like links, ads, or notes.
+        </p>
+    </div>
+
+</div>
+
+<div class="footer">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>
+
+</body>
+</html>

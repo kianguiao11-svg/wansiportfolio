@@ -1,0 +1,49 @@
+
+body {
+    background-color: #e6f0ff;
+    margin: 100px;
+    font-family: Arial, sans-serif;
+}
+
+.h2design {
+    color: rgb(255, 0, 51);
+}
+
+
+#info {
+    text-align: center;
+    line-height: 12px;
+}
+
+p {
+    font-size: 14px;
+}
+
+
+ul {
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+
+#myTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#myTable th {
+    background-color: black;
+    color: white;
+    padding: 8px;
+    border: 1px solid black;
+}
+
+#myTable td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
